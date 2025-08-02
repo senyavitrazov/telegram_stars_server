@@ -52,6 +52,6 @@ server.post('/payments', (req, res) => {
 
 server.use(router);
 
-server.listen(4000, () => {
-  console.log('🚀 JSON Server running at port 4000');
+server.listen(80, () => {
+  console.log('🚀 JSON Server running at port 80');
 });
