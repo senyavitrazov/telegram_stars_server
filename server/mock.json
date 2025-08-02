@@ -1,0 +1,536 @@
+{
+  "purchaseConfig": {
+    "premium": {
+      "options": [3, 6, 12],
+      "prices": {
+        "3": 14.97,
+        "6": 29.94,
+        "12": 59.88
+      }
+    },
+    "stars": {
+      "perStar": 0.05,
+      "min": 50,
+      "max": 1000000
+    }
+  },
+  "profiles": [
+    {
+      "username": "u489i",
+      "referralLink": "https://example.com/invite/u489i",
+      "transactions": [
+        {
+          "key": "1",
+          "type": "Premium",
+          "date": "2025-06-14T10:51:33.606818",
+          "amount": "1 month",
+          "status": "success"
+        },
+        {
+          "key": "2",
+          "type": "Stars",
+          "date": "2025-05-29T10:51:33.606842",
+          "amount": "11k",
+          "status": "inProgress"
+        },
+        {
+          "key": "3",
+          "type": "Stars",
+          "date": "2025-07-19T10:51:33.606850",
+          "amount": "2k",
+          "status": "error"
+        },
+        {
+          "key": "4",
+          "type": "Premium",
+          "date": "2025-05-06T10:51:33.606856",
+          "amount": "1 month",
+          "status": "inProgress"
+        },
+        {
+          "key": "5",
+          "type": "Premium",
+          "date": "2025-06-22T10:51:33.606862",
+          "amount": "1 month",
+          "status": "success"
+        },
+        {
+          "key": "6",
+          "type": "Premium",
+          "date": "2025-06-21T10:51:33.606873",
+          "amount": "1 month",
+          "status": "success"
+        }
+      ],
+      "referrals": {
+        "amountOfReferrals": 6,
+        "totalEarned": 2.2,
+        "referralList": [
+          {
+            "key": "1",
+            "username": "@scottcheryl",
+            "date": "2025-08-02T10:51:33.607112",
+            "earned": 0.5
+          },
+          {
+            "key": "2",
+            "username": "@gregory45",
+            "date": "2025-05-23T10:51:33.607233",
+            "earned": 0.3
+          },
+          {
+            "key": "3",
+            "username": "@whitechristina",
+            "date": "2025-05-08T10:51:33.607709",
+            "earned": 0.3
+          },
+          {
+            "key": "4",
+            "username": "@megan85",
+            "date": "2025-07-13T10:51:33.607872",
+            "earned": 0.38
+          },
+          {
+            "key": "5",
+            "username": "@floressean",
+            "date": "2025-06-22T10:51:33.608101",
+            "earned": 0.42
+          },
+          {
+            "key": "6",
+            "username": "@jacksontracey",
+            "date": "2025-06-01T10:51:33.608303",
+            "earned": 0.3
+          }
+        ]
+      }
+    },
+    {
+      "username": "Crash_Bash_FL",
+      "referralLink": "https://example.com/invite/Crash_Bash_FL",
+      "transactions": [
+        {
+          "key": "1",
+          "type": "Premium",
+          "date": "2025-05-28T10:51:33.608475",
+          "amount": "1 month",
+          "status": "error"
+        },
+        {
+          "key": "2",
+          "type": "Stars",
+          "date": "2025-06-11T10:51:33.608485",
+          "amount": "2k",
+          "status": "error"
+        },
+        {
+          "key": "3",
+          "type": "Premium",
+          "date": "2025-06-19T10:51:33.608492",
+          "amount": "1 year",
+          "status": "inProgress"
+        },
+        {
+          "key": "4",
+          "type": "Premium",
+          "date": "2025-05-27T10:51:33.608498",
+          "amount": "1 month",
+          "status": "success"
+        }
+      ],
+      "referrals": {
+        "amountOfReferrals": 6,
+        "totalEarned": 1.73,
+        "referralList": [
+          {
+            "key": "1",
+            "username": "@laurie31",
+            "date": "2025-05-28T10:51:33.608616",
+            "earned": 0.25
+          },
+          {
+            "key": "2",
+            "username": "@allenelizabeth",
+            "date": "2025-07-13T10:51:33.608978",
+            "earned": 0.48
+          },
+          {
+            "key": "3",
+            "username": "@hillteresa",
+            "date": "2025-06-22T10:51:33.609235",
+            "earned": 0.13
+          },
+          {
+            "key": "4",
+            "username": "@arthurduncan",
+            "date": "2025-04-24T10:51:33.609476",
+            "earned": 0.26
+          },
+          {
+            "key": "5",
+            "username": "@jeanettejames",
+            "date": "2025-07-07T10:51:33.609697",
+            "earned": 0.2
+          },
+          {
+            "key": "6",
+            "username": "@xsilva",
+            "date": "2025-04-30T10:51:33.609850",
+            "earned": 0.41
+          }
+        ]
+      }
+    },
+    {
+      "username": "mirandaphilip",
+      "referralLink": "https://example.com/invite/mirandaphilip",
+      "transactions": [
+        {
+          "key": "1",
+          "type": "Stars",
+          "date": "2025-05-31T10:51:33.610078",
+          "amount": "17k",
+          "status": "success"
+        },
+        {
+          "key": "2",
+          "type": "Premium",
+          "date": "2025-05-31T10:51:33.610088",
+          "amount": "1 month",
+          "status": "inProgress"
+        },
+        {
+          "key": "3",
+          "type": "Stars",
+          "date": "2025-05-27T10:51:33.610095",
+          "amount": "4k",
+          "status": "inProgress"
+        },
+        {
+          "key": "4",
+          "type": "Premium",
+          "date": "2025-05-26T10:51:33.610100",
+          "amount": "1 year",
+          "status": "error"
+        },
+        {
+          "key": "5",
+          "type": "Premium",
+          "date": "2025-06-27T10:51:33.610105",
+          "amount": "1 month",
+          "status": "error"
+        },
+        {
+          "key": "6",
+          "type": "Stars",
+          "date": "2025-07-15T10:51:33.610110",
+          "amount": "17k",
+          "status": "error"
+        }
+      ],
+      "referrals": {
+        "amountOfReferrals": 10,
+        "totalEarned": 3.12,
+        "referralList": [
+          {
+            "key": "1",
+            "username": "@scottrasmussen",
+            "date": "2025-07-26T10:51:33.610300",
+            "earned": 0.45
+          },
+          {
+            "key": "2",
+            "username": "@scottdaniel",
+            "date": "2025-05-01T10:51:33.610488",
+            "earned": 0.44
+          },
+          {
+            "key": "3",
+            "username": "@wmaddox",
+            "date": "2025-05-10T10:51:33.610645",
+            "earned": 0.14
+          },
+          {
+            "key": "4",
+            "username": "@jhart",
+            "date": "2025-07-21T10:51:33.610803",
+            "earned": 0.47
+          },
+          {
+            "key": "5",
+            "username": "@mark35",
+            "date": "2025-05-26T10:51:33.610930",
+            "earned": 0.13
+          },
+          {
+            "key": "6",
+            "username": "@adamsderek",
+            "date": "2025-06-05T10:51:33.611150",
+            "earned": 0.33
+          },
+          {
+            "key": "7",
+            "username": "@donaldrivers",
+            "date": "2025-06-12T10:51:33.611363",
+            "earned": 0.24
+          },
+          {
+            "key": "8",
+            "username": "@claudia81",
+            "date": "2025-05-01T10:51:33.611459",
+            "earned": 0.28
+          },
+          {
+            "key": "9",
+            "username": "@patrick14",
+            "date": "2025-05-25T10:51:33.611585",
+            "earned": 0.48
+          },
+          {
+            "key": "10",
+            "username": "@joshuawalker",
+            "date": "2025-07-29T10:51:33.611797",
+            "earned": 0.16
+          }
+        ]
+      }
+    },
+    {
+      "username": "whitakerronald",
+      "referralLink": "https://example.com/invite/whitakerronald",
+      "transactions": [
+        {
+          "key": "1",
+          "type": "Stars",
+          "date": "2025-06-05T10:51:33.611991",
+          "amount": "11k",
+          "status": "success"
+        },
+        {
+          "key": "2",
+          "type": "Stars",
+          "date": "2025-06-06T10:51:33.612002",
+          "amount": "1k",
+          "status": "error"
+        },
+        {
+          "key": "3",
+          "type": "Premium",
+          "date": "2025-07-12T10:51:33.612011",
+          "amount": "1 year",
+          "status": "success"
+        },
+        {
+          "key": "4",
+          "type": "Premium",
+          "date": "2025-05-07T10:51:33.612020",
+          "amount": "1 month",
+          "status": "inProgress"
+        },
+        {
+          "key": "5",
+          "type": "Premium",
+          "date": "2025-07-17T10:51:33.612029",
+          "amount": "1 year",
+          "status": "success"
+        },
+        {
+          "key": "6",
+          "type": "Stars",
+          "date": "2025-07-28T10:51:33.612039",
+          "amount": "8k",
+          "status": "inProgress"
+        },
+        {
+          "key": "7",
+          "type": "Stars",
+          "date": "2025-07-15T10:51:33.612048",
+          "amount": "14k",
+          "status": "error"
+        }
+      ],
+      "referrals": {
+        "amountOfReferrals": 9,
+        "totalEarned": 2.46,
+        "referralList": [
+          {
+            "key": "1",
+            "username": "@vblake",
+            "date": "2025-06-23T10:51:33.612188",
+            "earned": 0.35
+          },
+          {
+            "key": "2",
+            "username": "@karen51",
+            "date": "2025-06-14T10:51:33.612281",
+            "earned": 0.42
+          },
+          {
+            "key": "3",
+            "username": "@fmartin",
+            "date": "2025-07-25T10:51:33.612398",
+            "earned": 0.5
+          },
+          {
+            "key": "4",
+            "username": "@fsoto",
+            "date": "2025-04-28T10:51:33.612514",
+            "earned": 0.25
+          },
+          {
+            "key": "5",
+            "username": "@jenglish",
+            "date": "2025-05-28T10:51:33.612652",
+            "earned": 0.17
+          },
+          {
+            "key": "6",
+            "username": "@qjackson",
+            "date": "2025-05-13T10:51:33.612784",
+            "earned": 0.21
+          },
+          {
+            "key": "7",
+            "username": "@alexandra30",
+            "date": "2025-07-23T10:51:33.612876",
+            "earned": 0.21
+          },
+          {
+            "key": "8",
+            "username": "@carlaanderson",
+            "date": "2025-07-15T10:51:33.613061",
+            "earned": 0.14
+          },
+          {
+            "key": "9",
+            "username": "@amanda79",
+            "date": "2025-07-13T10:51:33.613190",
+            "earned": 0.21
+          }
+        ]
+      }
+    },
+    {
+      "username": "colleen91",
+      "referralLink": "https://example.com/invite/colleen91",
+      "transactions": [
+        {
+          "key": "1",
+          "type": "Premium",
+          "date": "2025-07-15T10:51:33.613289",
+          "amount": "1 year",
+          "status": "inProgress"
+        },
+        {
+          "key": "2",
+          "type": "Premium",
+          "date": "2025-06-10T10:51:33.613296",
+          "amount": "1 month",
+          "status": "success"
+        },
+        {
+          "key": "3",
+          "type": "Stars",
+          "date": "2025-07-19T10:51:33.613301",
+          "amount": "7k",
+          "status": "error"
+        },
+        {
+          "key": "4",
+          "type": "Stars",
+          "date": "2025-05-26T10:51:33.613307",
+          "amount": "11k",
+          "status": "success"
+        },
+        {
+          "key": "5",
+          "type": "Stars",
+          "date": "2025-06-03T10:51:33.613312",
+          "amount": "3k",
+          "status": "inProgress"
+        },
+        {
+          "key": "6",
+          "type": "Stars",
+          "date": "2025-05-21T10:51:33.613318",
+          "amount": "8k",
+          "status": "error"
+        },
+        {
+          "key": "7",
+          "type": "Premium",
+          "date": "2025-05-06T10:51:33.613323",
+          "amount": "1 month",
+          "status": "inProgress"
+        },
+        {
+          "key": "8",
+          "type": "Stars",
+          "date": "2025-06-05T10:51:33.613328",
+          "amount": "13k",
+          "status": "inProgress"
+        }
+      ],
+      "referrals": {
+        "amountOfReferrals": 9,
+        "totalEarned": 2.56,
+        "referralList": [
+          {
+            "key": "1",
+            "username": "@jacob64",
+            "date": "2025-05-16T10:51:33.613419",
+            "earned": 0.34
+          },
+          {
+            "key": "2",
+            "username": "@xshields",
+            "date": "2025-07-19T10:51:33.613539",
+            "earned": 0.15
+          },
+          {
+            "key": "3",
+            "username": "@brandy75",
+            "date": "2025-06-19T10:51:33.613628",
+            "earned": 0.44
+          },
+          {
+            "key": "4",
+            "username": "@zfrost",
+            "date": "2025-07-25T10:51:33.613759",
+            "earned": 0.39
+          },
+          {
+            "key": "5",
+            "username": "@angela71",
+            "date": "2025-07-01T10:51:33.613862",
+            "earned": 0.32
+          },
+          {
+            "key": "6",
+            "username": "@michael44",
+            "date": "2025-07-22T10:51:33.613952",
+            "earned": 0.28
+          },
+          {
+            "key": "7",
+            "username": "@joelmcdonald",
+            "date": "2025-05-11T10:51:33.614136",
+            "earned": 0.16
+          },
+          {
+            "key": "8",
+            "username": "@charlestodd",
+            "date": "2025-06-12T10:51:33.614374",
+            "earned": 0.34
+          },
+          {
+            "key": "9",
+            "username": "@pamelareynolds",
+            "date": "2025-05-15T10:51:33.614567",
+            "earned": 0.14
+          }
+        ]
+      }
+    }
+  ]
+}
