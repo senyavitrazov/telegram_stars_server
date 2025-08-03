@@ -14,6 +14,20 @@ server.use((req, res, next) => {
   next();
 });
 
+server.get('/referrals/:username', (req, res) => {
+  const db = router.db;
+  const user = db
+    .get('profiles')
+    .find({ username: req.params.username })
+    .value();
+
+  if (!user || !user.referrals) {
+    return res.status(404).jsonp({ error: 'Referral data not found' });
+  }
+
+  res.jsonp(user.referrals);
+});
+
 server.get('/profiles/:username', (req, res) => {
   const db = router.db;
   const user = db
