@@ -28,6 +28,20 @@ server.get('/referrals/:username', (req, res) => {
   res.jsonp(user.referrals);
 });
 
+server.get('/transactions/:username', (req, res) => {
+  const db = router.db;
+  const user = db
+    .get('profiles')
+    .find({ username: req.params.username })
+    .value();
+
+  if (!user || !user.transactions) {
+    return res.status(404).jsonp({ error: 'Transactions not found' });
+  }
+
+  res.jsonp(user.transactions);
+});
+
 server.get('/profiles/:username', (req, res) => {
   const db = router.db;
   const user = db
