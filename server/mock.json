@@ -1,4 +1,18 @@
 {
+  "recipients": [
+    {
+      "photo_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL_MRsecDthqsKtbfIjuxyWOVH54Crs1HxA7V9jKNxSdK0BH19XlcKG_80zG11ENME_iI&usqp=CAU",
+      "username": "testRecipientPreview",
+      "first_name": "John",
+      "last_name": "Doe"
+    },
+    {
+      "photo_url": "https://example.com/invite",
+      "username": "examplecom",
+      "first_name": "John",
+      "last_name": "Doe"
+    }
+  ],
   "purchaseConfig": {
     "premium": {
       "options": [3, 6, 12],

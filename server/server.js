@@ -56,6 +56,27 @@ server.get('/profiles/:username', (req, res) => {
   res.jsonp(user);
 });
 
+server.get('/recipients/:username', (req, res) => {
+  const db = router.db;
+  const username = req.params.username;
+
+  if (username === 'empty') {
+    return res.status(404).jsonp({ error: 'Recipient not found' });
+  }
+
+  const recipient = db
+    .get('recipients')
+    .find({ username: 'testRecipientPreview' })
+    .value();
+
+  if (!recipient) {
+    return res.status(500).jsonp({ error: 'Default recipient not found in DB' });
+  }
+
+  res.jsonp(recipient);
+});
+
+
 server.post('/payments', (req, res) => {
   const db = router.db;
   const payments = db.get('payments');
