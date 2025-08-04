@@ -16,7 +16,6 @@ server.use((req, res, next) => {
 
 server.post('/transactions', (req, res) => {
   const db = router.db;
-  db.defaults({ transactions: [] }).write();
   const transactions = db.get('transactions');
   const id = Date.now();
 
@@ -30,12 +29,14 @@ server.post('/transactions', (req, res) => {
   transactions.push(newTransaction).write();
 
   setTimeout(() => {
-    transactions.find({ id }).assign({ status: 'success' }).write();
-    console.log(`✅ Transaction ${id} marked as success`);
-  }, 5000);
+    const newStatus = Math.random() < 0.8 ? 'success' : 'error';
+    transactions.find({ id }).assign({ status: newStatus }).write();
+    console.log(`💰 tx ${id} marked as ${newStatus}`);
+  }, 3000);
 
   res.status(201).jsonp({ txId: id, status: 'pending' });
 });
+
 
 
 server.get('/transactions/:txId/status', (req, res) => {
