@@ -16,6 +16,7 @@ server.use((req, res, next) => {
 
 server.post('/transactions', (req, res) => {
   const db = router.db;
+  db.defaults({ transactions: [] }).write();
   const transactions = db.get('transactions');
   const id = Date.now();
 
