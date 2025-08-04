@@ -14,32 +14,43 @@ server.use((req, res, next) => {
   next();
 });
 
-server.get('/referrals/:username', (req, res) => {
+server.post('/transactions', (req, res) => {
   const db = router.db;
-  const user = db
-    .get('profiles')
-    .find({ username: req.params.username })
-    .value();
+  const transactions = db.get('transactions');
+  const id = Date.now();
 
-  if (!user || !user.referrals) {
-    return res.status(404).jsonp({ error: 'Referral data not found' });
-  }
+  const newTransaction = {
+    id,
+    ...req.body,
+    status: 'pending',
+    createdAt: new Date().toISOString(),
+  };
 
-  res.jsonp(user.referrals);
+  transactions.push(newTransaction).write();
+
+  setTimeout(() => {
+    transactions.find({ id }).assign({ status: 'success' }).write();
+    console.log(`✅ Transaction ${id} marked as success`);
+  }, 5000);
+
+  res.status(201).jsonp({ txId: id, status: 'pending' });
 });
 
-server.get('/transactions/:username', (req, res) => {
-  const db = router.db;
-  const user = db
-    .get('profiles')
-    .find({ username: req.params.username })
-    .value();
 
-  if (!user || !user.transactions) {
-    return res.status(404).jsonp({ error: 'Transactions not found' });
+server.get('/transactions/:txId/status', (req, res) => {
+  const db = router.db;
+  const txId = parseInt(req.params.txId, 10);
+
+  const transaction = db.get('transactions').find({ id: txId }).value();
+
+  if (!transaction) {
+    return res.status(404).jsonp({ error: 'Transaction not found' });
   }
 
-  res.jsonp(user.transactions);
+  res.jsonp({
+    txId: transaction.id,
+    status: transaction.status,
+  });
 });
 
 server.get('/profiles/:username', (req, res) => {
@@ -54,6 +65,34 @@ server.get('/profiles/:username', (req, res) => {
   }
 
   res.jsonp(user);
+});
+
+server.get('/profiles/:username/transactions', (req, res) => {
+  const db = router.db;
+  const user = db
+    .get('profiles')
+    .find({ username: req.params.username })
+    .value();
+
+  if (!user || !user.transactions) {
+    return res.status(404).jsonp({ error: 'Transactions not found' });
+  }
+
+  res.jsonp(user.transactions);
+});
+
+server.get('/profiles/:username/referrals', (req, res) => {
+  const db = router.db;
+  const user = db
+    .get('profiles')
+    .find({ username: req.params.username })
+    .value();
+
+  if (!user || !user.referrals) {
+    return res.status(404).jsonp({ error: 'Referral data not found' });
+  }
+
+  res.jsonp(user.referrals);
 });
 
 server.get('/recipients/:username', (req, res) => {
@@ -74,29 +113,6 @@ server.get('/recipients/:username', (req, res) => {
   }
 
   res.jsonp(recipient);
-});
-
-
-server.post('/payments', (req, res) => {
-  const db = router.db;
-  const payments = db.get('payments');
-  const id = Date.now();
-
-  const newPayment = {
-    id,
-    ...req.body,
-    status: 'inProgress',
-    createdAt: new Date().toISOString(),
-  };
-
-  payments.push(newPayment).write();
-
-  setTimeout(() => {
-    payments.find({ id }).assign({ status: 'success' }).write();
-    console.log(`✅ Payment ${id} marked as success`);
-  }, 5000);
-
-  res.status(201).jsonp(newPayment);
 });
 
 server.use(router);
